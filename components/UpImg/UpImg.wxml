@@ -1,0 +1,7 @@
+<view class="up-img-wrap">
+    <view class="up-img">
+        <image src="{{src}}" mode="widthFix"/> 
+    </view>
+    <icon class="img-delete" type="clear" size="23" color="red">  
+    </icon>  
+</view>

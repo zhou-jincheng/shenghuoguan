@@ -1,0 +1,12 @@
+.up-img-wrap {
+  width: 90rpx;
+  position: relative;
+}
+.up-img-wrap .up-img {
+  width: 100%;
+}
+.up-img-wrap .img-delete {
+  position: absolute;
+  top: -22rpx;
+  right: -22rpx;
+}

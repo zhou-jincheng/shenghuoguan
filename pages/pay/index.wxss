@@ -1,0 +1,92 @@
+.cart .recive-address-row {
+  border-bottom: 8rpx solid #ff0000;
+}
+.cart .recive-address-row .real-address {
+  padding: 20rpx;
+  display: flex;
+}
+.cart .recive-address-row .real-address .userInfo {
+  flex: 4;
+}
+.cart .recive-address-row .real-address .userTel {
+  flex: 2;
+  text-align: right;
+}
+.cart .cart-goods-list .cart-title {
+  padding: 20rpx;
+  font-size: 40rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.cart .cart-goods-list .cart-content {
+  padding: 0 20rpx;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #ccc;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .preview-img {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .preview-img image {
+  width: 80%;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .goods-content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .goods-content .goods-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .goods-content .price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-goods-list .cart-content .cart-goods-item .goods-content .price-wrap .goods-price {
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.cart .cart-tools {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 36rpx;
+}
+.cart .cart-tools .total-wrap {
+  flex: 4;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rpx;
+  padding-right: 20rpx;
+}
+.cart .cart-tools .total-wrap .total-price {
+  color: #ff0000;
+  font-weight: 700;
+}
+.cart .cart-tools .total-wrap .contain {
+  font-size: 24rpx;
+  color: #333;
+}
+.cart .cart-tools .pay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 40rpx;
+}

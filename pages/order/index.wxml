@@ -1,0 +1,28 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+
+<!-- 顶部导航栏和主体 -->
+<Tabs tabs="{{tabs}}" bindtabClick="HandleTabClick">
+    <!-- 通过判断tabs中的isActive来决定显示哪个页面 -->
+    <block wx:if="{{tabs[0].isActive}}">
+        <view>
+            全部
+        </view>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+        <view>
+            代付款
+        </view>
+    </block>
+    <block wx:if="{{tabs[2].isActive}}">
+        <view>
+            待收货
+        </view>
+    </block>
+    <block wx:if="{{tabs[3].isActive}}">
+        <view>
+            退款/退货
+        </view>
+    </block>
+
+</Tabs>

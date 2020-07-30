@@ -1,0 +1,51 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+
+<!-- 顶部导航栏和主体 -->
+<Tabs class="tabs" tabs="{{tabs}}" bindtabClick="HandleTabClick">
+    <!-- 通过判断tabs中的isActive来决定显示哪个页面 -->
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="goods-collect">
+            <view class="goods-title">
+                <text class="goods-title-item active">全部</text>
+                <text class="goods-title-item">正在热卖</text>
+                <text class="goods-title-item">即将上线</text>
+            </view>
+            <view class="goods-content">
+                <navigator 
+                class="goods" 
+                url="/pages/goods_detail/index?goods_id={{item.goods_id}}" 
+                open-type="navigate"
+                wx:for="{{goodsList}}"
+                wx:key="goods_id"
+                >
+                    <view class="goods-img-wrap">
+                        <image 
+                        mode="widthFix" 
+                        src="{{item.goods_small_logo ? item.goods_small_logo : 'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+                    </view>    
+                    <view class="goods-info-wrap">
+                        <view class="desc">{{item.goods_name}}</view>
+                        <view class="price">{{item.goods_price}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+        <view>
+            品牌收藏
+        </view>
+    </block>
+    <block wx:if="{{tabs[2].isActive}}">
+        <view>
+            店铺收藏
+        </view>
+    </block>
+    <block wx:if="{{tabs[3].isActive}}">
+        <view>
+            浏览足迹
+        </view>
+    </block>
+
+</Tabs>

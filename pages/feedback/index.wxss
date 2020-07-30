@@ -1,0 +1,68 @@
+page {
+  color: #333;
+}
+.experience {
+  background-color: #eee;
+}
+.experience .title {
+  padding: 20rpx;
+}
+.experience .tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience .tips .tips-item {
+  width: 30%;
+  background-color: #fff;
+  margin: 20rpx 10rpx;
+  padding: 12rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience .content {
+  background-color: #fff;
+  width: 90%;
+  margin: 40rpx auto 20rpx;
+  padding: 10rpx;
+}
+.experience .content textarea {
+  width: 100%;
+}
+.experience .content .up-img-btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience .content .up-img-btn-wrap button {
+  width: 90rpx!important;
+  height: 90rpx!important;
+  margin: 0;
+  padding: 0;
+  font-size: 40rpx;
+  line-height: 90rpx!important;
+  border: 2rpx solid #666;
+  margin-left: 20rpx;
+}
+.experience .content .up-img-btn-wrap .up-img-item {
+  margin-left: 20rpx;
+}
+.experience .form-btn-wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.experience .form-btn-wrap .fb-commit {
+  width: 25%;
+  height: 90rpx;
+  background-color: #e64340;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  border-radius: 10rpx;
+}
+.experience .form-btn-wrap .fb-commit icon {
+  margin-right: 10rpx;
+}

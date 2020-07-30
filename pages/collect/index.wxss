@@ -1,0 +1,46 @@
+.goods-collect {
+  background-color: #eee;
+}
+.goods-collect .goods-title {
+  padding: 25rpx;
+}
+.goods-collect .goods-title .goods-title-item {
+  padding: 10rpx;
+  margin-right: 20rpx;
+  background-color: #fff;
+  border: 2rpx solid #ccc;
+}
+.goods-collect .goods-title .active {
+  color: var(--themeColor);
+  border-color: currentColor;
+}
+.goods-collect .goods-content .goods {
+  display: flex;
+  height: 180rpx;
+  background-color: #fff;
+  margin-bottom: 15rpx;
+}
+.goods-collect .goods-content .goods .goods-img-wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.goods-collect .goods-content .goods .goods-img-wrap image {
+  width: 80%;
+}
+.goods-collect .goods-content .goods .goods-info-wrap {
+  flex: 5;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+.goods-collect .goods-content .goods .goods-info-wrap .desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.goods-collect .goods-content .goods .goods-info-wrap .price {
+  color: var(--themeColor);
+}

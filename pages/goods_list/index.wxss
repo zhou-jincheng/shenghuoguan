@@ -1,0 +1,28 @@
+.goods {
+  display: flex;
+  height: 180rpx;
+}
+.goods .goods-img-wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.goods .goods-img-wrap image {
+  width: 80%;
+}
+.goods .goods-info-wrap {
+  flex: 5;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+.goods .goods-info-wrap .desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.goods .goods-info-wrap .price {
+  color: var(--themeColor);
+}

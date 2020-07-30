@@ -1,0 +1,135 @@
+page {
+    background-color: #eee;
+}
+.user {
+    position: relative;
+    color: #333;
+    .user-login {
+        position: absolute;
+        top: 80rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10rpx 30rpx;
+        color: var(--themeColor);
+        border: 4rpx solid currentColor;
+        font-size: 40rpx;
+        font-weight: 700;
+        border-radius: 25rpx;
+    }
+    .user-info-wrap {
+       .user-avatar {
+           position: relative;
+           height: 45vh;
+           overflow: hidden;
+           .user-avatar-big {
+            filter: blur(8rpx);
+           }
+           .user-avatar-small-wrap {
+               position: absolute;
+               top: 20%;
+               left: 50%;
+               width: 30%;
+               transform: translateX(-50%);
+               .user-avatar-small{
+                border-radius: 50%;
+               }
+               .username {
+                   margin-top: 30rpx;
+                   text-align: center;
+                   font-size: 40rpx;
+               }
+           }
+           
+       } 
+       .user-main {
+           position: absolute;
+           width: 90vw;
+           top: 40vh;
+           left: 50%;
+           transform: translateX(-50%);
+           overflow: hidden;
+           padding: 0 20rpx;
+        .history-wrap {
+            height: 90rpx;
+            background-color: #fff;
+            display: flex;
+            .history-item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .history-item-num {
+                    color: var(--themeColor);
+                }
+            }
+        }
+        .order-wrap {
+            margin-top: 20rpx;
+            background-color: #fff;
+            .order-title {
+                padding: 15rpx;
+                border-bottom: 2rpx solid #ccc;
+            }
+            .order-body {
+                display: flex;
+                padding: 15rpx;
+                .order-item {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .iconfont {
+                        color: var(--themeColor);
+                    }
+                    .order-item-text {
+
+                    }
+                }
+            }
+        }
+        .address {
+            margin: 20rpx 0;
+            background-color: #fff;
+            padding: 20rpx;
+            overflow: hidden;
+            .address-text {
+                float: left;
+            }
+            .address-icon {
+                float: right;
+            }
+        }
+        .aboutApp {
+            background-color: #fff;
+            .contact {
+                padding: 20rpx;
+                border-bottom: 2rpx solid #ccc;
+                overflow: hidden;
+                .contact-text {
+                    float: left;
+                }
+                .contact-tel {
+                    float: right;
+                }
+            }
+            .feedback {
+                padding: 20rpx;
+                border-bottom: 2rpx solid #ccc;
+
+            }
+            .aboutOurs {
+                padding: 20rpx;
+                border-bottom: 2rpx solid #ccc;
+            }
+        }
+        .recomment {
+            margin-top: 20rpx;
+            margin-bottom: 80rpx;
+            padding: 20rpx;
+            background-color: #fff;
+        }
+       }
+    }
+}

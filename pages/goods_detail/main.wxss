@@ -1,0 +1,88 @@
+.goods-info {
+  padding-bottom: 90rpx;
+}
+.goods-info .goods-swiper {
+  height: 70vw;
+  text-align: center;
+}
+.goods-info .goods-swiper image {
+  width: 60%;
+}
+.goods-info .detail-price {
+  padding: 20rpx;
+  color: var(--themeColor);
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.goods-info .detail-desc-wrap {
+  padding: 10rpx;
+  display: flex;
+  border-bottom: 8rpx solid #ccc;
+}
+.goods-info .detail-desc-wrap .goods-name {
+  flex: 8;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding-right: 20rpx;
+}
+.goods-info .detail-desc-wrap .detail-collect {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 2rpx solid #333;
+}
+.goods-info .goods-detail .goods-detail-title {
+  padding: 20rpx;
+  color: var(--themeColor);
+  font-size: 40rpx;
+  font-weight: 700;
+  border-bottom: 8rpx solid #ccc;
+}
+.goods-info .goods-detail .goods-detail-body {
+  border-top: 2rpx solid #000;
+}
+.detail-tools {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #ccc;
+}
+.detail-tools .tools-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.detail-tools .tools-item button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.detail-tools .tools-add-carts {
+  flex: 2;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 34rpx;
+}
+.detail-tools .tools-buy {
+  flex: 2;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 34rpx;
+}

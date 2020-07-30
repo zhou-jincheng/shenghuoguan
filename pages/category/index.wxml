@@ -1,0 +1,48 @@
+<!-- 搜索款开始 -->
+<SearchInput></SearchInput>
+<!-- 搜索款结束 -->
+
+<view class="category">
+    <scroll-view class="left-menu" scroll-y>
+        <view 
+        class="cate {{index == currentIndex ? 'active' : ''}}" 
+        wx:for="{{leftMenuList}}" 
+        wx:key="*this"
+        bindtap="toggleCategory"
+        data-index="{{index}}"
+        >{{item}}</view>
+    </scroll-view>
+    <scroll-view class="right-content" scroll-y scroll-top="{{backTop}}">
+        <view 
+        class="goods-group"
+        wx:for="{{rightContent}}"
+        wx:for-item="item1"
+        wx:for-index="index1"
+        wx:key="cat_name">
+            <view class="goods-title">
+                <text class="title-decorate">
+                    /
+                </text>
+                <text>
+                    {{item1.cat_name}}
+                </text>
+                <text class="title-decorate">
+                    /
+                </text>
+            </view>
+            <view class="goods-list">
+                <view 
+                class="goods"
+                wx:for="{{item1.children}}"
+                wx:for-item="item2"
+                wx:for-index="index"
+                wx:key="cat_id">
+                    <navigator url="/pages/goods_list/index?cid={{item2.cat_id}}" open-type="navigate">
+                        <image src="{{item2.cat_icon}}" mode="widthFix" />
+                        <view class="goods-name">{{item2.cat_name}}</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

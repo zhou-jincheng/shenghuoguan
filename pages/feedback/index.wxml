@@ -1,0 +1,43 @@
+<Tabs tabs="{{tabs}}" bindtabClick="HandleTabClick">
+    <!-- 通过判断tabs中的isActive来决定显示哪个页面 -->
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="experience">
+            <view class="title">问题的种类</view>
+            <view class="tips">
+                <view class="tips-item">功能建议</view>
+                <view class="tips-item">购买遇到问题</view>
+                <view class="tips-item">性能问题</view>
+                <view class="tips-item">其他</view>
+            </view>
+            <view class="content">
+                <textarea 
+                placeholder="请描述一下您的问题" 
+                bindinput="handletextareaInput"
+                value="{{ideaContent}}"></textarea>
+                <view class="up-img-btn-wrap">
+                    <button bindtap="handleUploadImg">+</button> 
+                    <view 
+                    class="up-img-item"
+                    wx:for="{{tempFilePaths}}"
+                    wx:key="*this"
+                    bindtap="handleImgDelete"
+                    data-index="{{index}}">
+                        <UpImg src="{{item}}"></UpImg>
+                    </view>
+                </view>
+            </view>
+            <view class="form-btn-wrap">
+                <view class="fb-commit" bindtap="commit">
+                    <icon type="success_no_circle" color="#fff"></icon>
+                    提交  
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">
+        <view class="complain">
+            商品、商家投诉
+        </view>
+    </block>   
+
+</Tabs>
